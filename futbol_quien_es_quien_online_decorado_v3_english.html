@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Game - Who Is Who</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            padding: 30px;
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #ff5722;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .button {
+            background-color: #ff5722;
+            padding: 15px 30px;
+            border: none;
+            color: white;
+            font-size: 1.3em;
+            cursor: pointer;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.2s;
+        }
+        .button:hover {
+            background-color: #e64a19;
+            transform: scale(1.05);
+        }
+        .game-board {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+        }
+        .player-card {
+            width: 160px;
+            height: 220px;
+            background-color: #444;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .player-card img {
+            width: 100%;
+            height: 120px;
+            border-radius: 5px;
+        }
+        .player-card:hover {
+            transform: scale(1.1);
+        }
+        .question {
+            margin-top: 20px;
+            font-size: 1.8em;
+            color: #ff5722;
+        }
+        .answer-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 10px;
+        }
+        .answer-buttons button {
+            padding: 12px 30px;
+            background-color: #444;
+            border: 1px solid #fff;
+            color: white;
+            font-size: 1.2em;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .answer-buttons button:hover {
+            background-color: #ff5722;
+        }
+        .input-code {
+            margin-top: 20px;
+            display: none;
+        }
+        .room-code-display {
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: #ff5722;
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 1.2em;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<header>Football Game - Who Is Who</header>
+
+<div class="container">
+    <div id="menu">
+        <button class="button" id="play-online">Play Online</button>
+        <button class="button" id="play-bot">Play Against Bot</button>
+    </div>
+    
+    <div id="game-section" style="display: none;">
+        <div class="game-board" id="player-board"></div>
+        <div id="question-section" class="question">Choose a player from the list</div>
+        <div class="answer-buttons" id="answer-buttons"></div>
+    </div>
+
+    <div id="online-options" style="display: none;">
+        <button class="button" id="create-room">Invite a Friend</button>
+        <button class="button" id="join-room">Join with Code</button>
+    </div>
+
+    <div id="input-code" class="input-code">
+        <input type="text" id="room-code" placeholder="Enter room code">
+        <button class="button" id="join-room-code">Join</button>
+    </div>
+
+    <div id="room-code-display" class="room-code-display" style="display: none;">
+        Room Code: <span id="room-code-text"></span>
+    </div>
+
+    <div id="revancha-button" style="display: none;">
+        <button class="button" id="play-again">Play Again</button>
+    </div>
+</div>
+
+<footer>© 2025 Football Game</footer>
+
+<script>
+    // Game logic goes here, similar to the previous code.
+</script>
+
+</body>
+</html>
